@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            light:'#DCDCDC',
+            vert: '#3DCBB1 ',
+            light1:'#F9F9F9E5',
+            noire: '#1B1B1B',
+        
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-light">
+<nav class="bg-white py-4 px-4 border-b mx-9">
+    <div class="max-w-6xl mx-auto flex items-center justify-between ">
+    
+      <div class="flex items-center space-x-4 ">
+        <div class="flex items-center">
+          <img src="/Frame 44.png" alt="MyCourse.io" class="h-8 w-8">
+          <span class="ml-2 font-bold">MyCourse.io</span>
+        </div>
+        <div class="relative">
+          <button class="flex items-center space-x-1 text-noire">
+            <span>Browse</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex-1 max-w-xl px-8">
+        <div class="relative">
+          <input type="text" placeholder="Search for course" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <button class="absolute right-3 top-2">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2883 12.6626H13.9796L17.6896 16.3901C18.0483 16.7489 18.0483 17.3351 17.6896 17.6939C17.3308 18.0526 16.7446 18.0526 16.3858 17.6939L12.6671 13.9751V13.2839L12.4308 13.0389C11.2058 14.0889 9.53455 14.6314 7.7583 14.3339C5.3258 13.9226 3.3833 11.8926 3.0858 9.44263C2.6308 5.74138 5.7458 2.62638 9.44705 3.08138C11.8971 3.37888 13.9271 5.32138 14.3383 7.75388C14.6358 9.53013 14.0933 11.2014 13.0433 12.4264L13.2883 12.6626ZM4.79205 8.72513C4.79205 10.9039 6.5508 12.6626 8.72955 12.6626C10.9083 12.6626 12.6671 10.9039 12.6671 8.72513C12.6671 6.54638 10.9083 4.78763 8.72955 4.78763C6.5508 4.78763 4.79205 6.54638 4.79205 8.72513Z" fill="#1B1B1B"/>
+                </svg>    
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-noire">Become Instructor</a>
+        <button class="p-2">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.00390625 1C-0.00390625 1.55 0.446094 2 0.996094 2H1.99609L5.59609 9.59L4.24609 12.03C3.51609 13.37 4.47609 15 5.99609 15H16.9961C17.5461 15 17.9961 14.55 17.9961 14C17.9961 13.45 17.5461 13 16.9961 13H5.99609L7.09609 11H14.5461C15.2961 11 15.9561 10.59 16.2961 9.97L19.8761 3.48C20.2461 2.82 19.7661 2 19.0061 2H4.20609L3.53609 0.57C3.37609 0.22 3.01609 0 2.63609 0H0.996094C0.446094 0 -0.00390625 0.45 -0.00390625 1ZM5.99609 16C4.89609 16 4.00609 16.9 4.00609 18C4.00609 19.1 4.89609 20 5.99609 20C7.09609 20 7.99609 19.1 7.99609 18C7.99609 16.9 7.09609 16 5.99609 16ZM14.0061 18C14.0061 16.9 14.8961 16 15.9961 16C17.0961 16 17.9961 16.9 17.9961 18C17.9961 19.1 17.0961 20 15.9961 20C14.8961 20 14.0061 19.1 14.0061 18Z" fill="#1B1B1B"/>
+                </svg>
+        </button>
+        <button class="px-4 py-2 bg-white text-noire border rounded-full ">Login</button>
+        <button class=" flex py-2 px-4 bg-vert text-white rounded-lg "> <svg width="12" class="mt-2" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 1.33334C4.32016 1.33334 1.3335 4.32001 1.3335 8.00001C1.3335 11.68 4.32016 14.6667 8.00016 14.6667C11.6802 14.6667 14.6668 11.68 14.6668 8.00001C14.6668 4.32001 11.6802 1.33334 8.00016 1.33334ZM10.8268 5.17334C10.0468 4.39334 9.02683 4.00001 8.00016 4.00001V8.00001L5.1735 10.8267C6.7335 12.3867 9.26683 12.3867 10.8335 10.8267C12.3935 9.26668 12.3935 6.73334 10.8268 5.17334ZM2.66683 8.00001C2.66683 10.9467 5.0535 13.3333 8.00016 13.3333C10.9468 13.3333 13.3335 10.9467 13.3335 8.00001C13.3335 5.05334 10.9468 2.66668 8.00016 2.66668C5.0535 2.66668 2.66683 5.05334 2.66683 8.00001Z" fill="white"/>
+            </svg> 
+            Sign Up</button>
+      </div>
+    </div>
+  </nav>
+   <section class=" mt-9">
+  <nav class="bg-white py-4 px-4 border-b mx-9">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+     
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center">
+          <img src="/Frame 44.png" alt="MyCourse.io" class="h-8 w-8">
+          <span class="ml-2  font-bold">MyCourse.io</span>
+        </div>
+        <div class="relative">
+          <button class="flex items-center space-x-1 text-noire">
+            <span>Browse</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex-1 max-w-xl px-8">
+        <div class="relative">
+          <input type="text" placeholder="Search for course" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <button class="absolute right-3 top-2">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2883 12.6626H13.9796L17.6896 16.3901C18.0483 16.7489 18.0483 17.3351 17.6896 17.6939C17.3308 18.0526 16.7446 18.0526 16.3858 17.6939L12.6671 13.9751V13.2839L12.4308 13.0389C11.2058 14.0889 9.53455 14.6314 7.7583 14.3339C5.3258 13.9226 3.3833 11.8926 3.0858 9.44263C2.6308 5.74138 5.7458 2.62638 9.44705 3.08138C11.8971 3.37888 13.9271 5.32138 14.3383 7.75388C14.6358 9.53013 14.0933 11.2014 13.0433 12.4264L13.2883 12.6626ZM4.79205 8.72513C4.79205 10.9039 6.5508 12.6626 8.72955 12.6626C10.9083 12.6626 12.6671 10.9039 12.6671 8.72513C12.6671 6.54638 10.9083 4.78763 8.72955 4.78763C6.5508 4.78763 4.79205 6.54638 4.79205 8.72513Z" fill="#1B1B1B"/>
+                </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-noire">Become Instructor</a>
+        <button class="p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99609 3C1.99609 3.55 2.44609 4 2.99609 4H3.99609L7.59609 11.59L6.24609 14.03C5.51609 15.37 6.47609 17 7.99609 17H18.9961C19.5461 17 19.9961 16.55 19.9961 16C19.9961 15.45 19.5461 15 18.9961 15H7.99609L9.09609 13H16.5461C17.2961 13 17.9561 12.59 18.2961 11.97L21.8761 5.48C22.2461 4.82 21.7661 4 21.0061 4H6.20609L5.53609 2.57C5.37609 2.22 5.01609 2 4.63609 2H2.99609C2.44609 2 1.99609 2.45 1.99609 3ZM7.99609 18C6.89609 18 6.00609 18.9 6.00609 20C6.00609 21.1 6.89609 22 7.99609 22C9.09609 22 9.99609 21.1 9.99609 20C9.99609 18.9 9.09609 18 7.99609 18ZM16.0061 20C16.0061 18.9 16.8961 18 17.9961 18C19.0961 18 19.9961 18.9 19.9961 20C19.9961 21.1 19.0961 22 17.9961 22C16.8961 22 16.0061 21.1 16.0061 20Z" fill="#1B1B1B"/>
+                </svg>
+                 </button>
+        <button class="p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2901 17.04L18.0001 15.75V10.75C18.0001 7.68 16.3601 5.11 13.5001 4.43V3.75C13.5001 2.92 12.8301 2.25 12.0001 2.25C11.1701 2.25 10.5001 2.92 10.5001 3.75V4.43C7.63005 5.11 6.00005 7.67 6.00005 10.75V15.75L4.71005 17.04C4.08005 17.67 4.52005 18.75 5.41005 18.75H18.5801C19.4801 18.75 19.9201 17.67 19.2901 17.04ZM8.00005 16.75V10.75C8.00005 8.27 9.51005 6.25 12.0001 6.25C14.4901 6.25 16.0001 8.27 16.0001 10.75V16.75H8.00005ZM14.0001 19.75C14.0001 20.85 13.1001 21.75 12.0001 21.75C10.8901 21.75 10.0001 20.85 10.0001 19.75H14.0001Z" fill="#1B1B1B"/>
+                </svg>    
+        </button>
+        <img src="/Mask Group.png" alt="User avatar" class="w-8 h-8 rounded-full border">
+      </div>
+    </div>
+  </nav>
+</section>
+  
+</body>
+</html>
